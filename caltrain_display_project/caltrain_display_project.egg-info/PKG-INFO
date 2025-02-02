@@ -1,0 +1,7 @@
+Metadata-Version: 2.2
+Name: caltrain_display_project
+Version: 0.1
+Requires-Dist: requests
+Requires-Dist: beautifulsoup4
+Requires-Dist: lxml
+Dynamic: requires-dist

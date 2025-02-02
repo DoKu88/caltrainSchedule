@@ -1,7 +1,13 @@
 import unittest
-from src.fetch_caltrain_data import CaltrainDataFetcher
-from src.parse_schedule import ScheduleParser
-from src.display_schedule import ScheduleDisplay
+import os
+import sys
+
+# Add the project root directory to Python path
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+from caltrain_display_project.src.fetch_caltrain_data import CaltrainDataFetcher
+from caltrain_display_project.src.parse_schedule import ScheduleParser
+from caltrain_display_project.src.display_schedule import ScheduleDisplay
 
 class TestCaltrainDisplay(unittest.TestCase):
     def setUp(self):

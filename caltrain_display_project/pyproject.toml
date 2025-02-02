@@ -1,0 +1,19 @@
+[project]
+name = "caltrain_display_project"
+version = "0.1.0"
+description = "Display Caltrain schedule on a TV using Raspberry Pi"
+requires-python = ">=3.8"
+dependencies = [
+    "requests>=2.31.0",
+    "beautifulsoup4>=4.12.3",
+    "lxml>=5.1.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+pythonpath = [
+  "src"
+] 
